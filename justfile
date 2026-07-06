@@ -11,14 +11,19 @@ python := if os_family() == "windows" { "python" } else { "python3" }
 help:
     just -l
 
-# `codex`
+# `mantis`
+alias m := mantis
+mantis *args:
+    cargo run --bin mantis -- {args}
+
+# `codex` (alias of `mantis`, kept for compatibility)
 alias c := codex
 codex *args:
     cargo run --bin codex -- {args}
 
-# `codex exec`
+# `mantis exec`
 exec *args:
-    cargo run --bin codex -- exec {args}
+    cargo run --bin mantis -- exec {args}
 
 # Start `codex exec-server` and run codex-tui.
 [no-cd]
