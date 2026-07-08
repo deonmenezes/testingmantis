@@ -9,13 +9,14 @@ const ANNOUNCEMENT_TIP_URL: &str =
 const IS_MACOS: bool = cfg!(target_os = "macos");
 const IS_WINDOWS: bool = cfg!(target_os = "windows");
 
-const APP_TOOLTIP: &str = "Try **Mantis Desktop**. Run 'mantis app' to launch the desktop experience.";
+const APP_TOOLTIP: &str =
+    "Try **Mantis Desktop**. Run 'mantis app' to launch the desktop experience.";
 const FAST_TOOLTIP: &str =
     "*New* Use **/fast** to enable our fastest inference with increased plan usage.";
-const OTHER_TOOLTIP: &str = "*New* Build faster with **Mantis Desktop**. Run 'mantis app' to launch it.";
+const OTHER_TOOLTIP: &str =
+    "*New* Build faster with **Mantis Desktop**. Run 'mantis app' to launch it.";
 const OTHER_TOOLTIP_NON_MAC: &str = "*New* Build faster with Mantis.";
-const FREE_GO_TOOLTIP: &str =
-    "*New* Mantis is your authorized vulnerability-discovery agent – let’s secure your code together.";
+const FREE_GO_TOOLTIP: &str = "*New* Mantis is your authorized vulnerability-discovery agent – let’s secure your code together.";
 
 const RAW_TOOLTIPS: &str = include_str!("../tooltips.txt");
 
